@@ -37,7 +37,7 @@ const submitForm = async () => {
         </h2>
 
         <form @submit.prevent="submitForm" class="space-y-6">
-          <!-- Error Alert -->
+
           <div 
             v-if="error"
             class="bg-red-900/50 border border-red-700 text-red-200 px-4 py-3 rounded-lg"
@@ -45,7 +45,7 @@ const submitForm = async () => {
             {{ error }}
           </div>
 
-          <!-- Name Input -->
+ 
           <div>
             <label for="name" class="block text-sm font-medium text-gray-300 mb-2">
               Name
@@ -60,7 +60,7 @@ const submitForm = async () => {
             />
           </div>
 
-          <!-- Email Input -->
+
           <div>
             <label for="email" class="block text-sm font-medium text-gray-300 mb-2">
               Email
@@ -75,7 +75,7 @@ const submitForm = async () => {
             />
           </div>
 
-          <!-- Password Input -->
+
           <div>
             <label for="password" class="block text-sm font-medium text-gray-300 mb-2">
               Password
@@ -90,7 +90,7 @@ const submitForm = async () => {
             />
           </div>
 
-          <!-- Confirm Password Input -->
+ 
           <div>
             <label for="password_confirmation" class="block text-sm font-medium text-gray-300 mb-2">
               Confirm Password
@@ -105,7 +105,7 @@ const submitForm = async () => {
             />
           </div>
 
-          <!-- Submit Button -->
+
           <button
             type="submit"
             class="w-full bg-indigo-600 text-white rounded-lg px-4 py-3 font-medium hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-800 transition-colors duration-200"
