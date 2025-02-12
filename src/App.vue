@@ -20,18 +20,6 @@ const getUser = async () => {
 };
 
 
-const login = async (email, password) => {
-  try {
-    const response = await api.post("/login", { email, password });
-    localStorage.setItem("token", response.data.token);
-    state.token = response.data.token;
-    state.user = response.data.user;
-    getCapsules();
-    router.push("/");
-  } catch (error) {
-    console.error("Login Failed:", error);
-  }
-};
 
 const logout = async () => {
   try {
